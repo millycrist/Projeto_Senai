@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lanchonete - Totem</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="carrinho.css">
+  
+
+  
+  
+  <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="img/logo.png" alt="Logo da Sua Empresa">
+      <span class="company-name">Top Snacks</span>
+    </div>
+<nav>
+  <a href="hamburgue.html">Hamburguer</a>
+  <a href="cachorroquente.html">Cachorro Quente</a>
+  <a href="batatafrita.html">Batata Frita</a>
+  <a href="bebidas.html">Bebidas</a>
+  <a href="acai.html">Açaí</a>
+  <a href="https://api.whatsapp.com/send?phone=+55986641718" target="_blank">
+    <img src="img/img.icons8.png" alt="">
+</nav>
+<div id="checkout-container">
+    <a href="totem.html" id="checkout-btn">Finalizar Pedido</a>
+  </div>
+</header>
+<div class="cart-container">
+  <ul id="cart"></ul>
+  <button onclick="clearCart()">Limpar Carrinho</button> 
+</div>
+
+  <div class="background-image"></div>
+  <div class="content">
+    <div id="payment-form">
+      <h2>Informações de Pagamento</h2>
+      <br>
+      <br>
+      <div>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" placeholder="Seu Nome">
+      </div>
+      <br>
+      <div>
+        <label for="phone">Telefone:</label>
+        <input type="text" id="phone" placeholder="(XX) XXXXX-XXXX">
+        <br>
+        <br>
+        <label for="address">Endereço:</label>
+        <input type="text" id="address" placeholder="Seu Endereço">
+      </div>
+      <br>
+      <div id="payment-methods">
+        <input type="radio" name="paymentMethod" value="qrCode" id="qrCode" checked> Qr Code
+        <input type="radio" name="paymentMethod" value="creditCard" id="creditCard"> Cartão de Crédito/Débito
+      </div>
+      <div id="card-details" style="display: none;">
+        <label for="cardNumber">Número do Cartão:</label>
+        <input type="text" id="cardNumber" name="cardNumber" placeholder="Número do Cartão">
+      </div>
+      <br>
+      <button onclick="completeOrder()">Finalizar Pedido</button>
+      <br>
+      <br>
+      <!-- Movido o elemento div que contém o QRCode abaixo do botão "Finalizar Pedido" -->
+      <div id="qr-code"></div>
+      <div id="card-details"></div>
+      <div id="order-code"></div>
+    </div>
+   
+    </div>
+  </div>
+
+  <section class="button">
+    <a href="sobre.html" class="botao-voltar">Voltar para a Página inicial</a>
+</section>
+  <script src="script.js"></script>
+  <script src="javascrip.js"></script>
+</body>
+</html>

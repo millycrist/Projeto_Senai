@@ -1,0 +1,67 @@
+/* Estilos para os Produtos */
+.products-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background-color: #000000; /* Cor de fundo  */
+  }
+
+  h1{
+    color:#ffbe0b;
+    text-align: center;
+  }
+  h2{
+    color: #ffffff;
+    font-size: medium;
+  }
+  
+  .product {
+    background-color: #000000; /* Fundo branco para os produtos */
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 20px; /* Espaço entre os produtos */
+    width: calc(25% - 20px); /* 25% da largura menos a margem */
+    box-sizing: border-box; /* Garante que a largura inclui a borda e o preenchimento */
+  }
+  
+  .product img {
+    width: 100%; /* Faz com que todas as imagens ocupem 100% da largura do contêiner */
+    max-width: 200px; /* Define o tamanho máximo das imagens para evitar distorções */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 5px; /* Adiciona borda arredondada */
+  }
+  
+  .product button {
+    background-color: #ffbe0b; /* Cor do botão */
+    color: #ffffff; /* Cor do texto do botão */
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+  
+  /* Estilos para o Carrinho */
+  .cart-container {
+    padding: 90px;
+    background-color:#000000; /* Cor de fundo da Xbox */
+    color: #ffffff; /* Cor do texto */
+    border-top: 2px solid #ffffff; /* Linha superior */
+  }
+  
+  .cart-container button {
+    background-color: #ffbe0b; /* Cor do botão */
+    color: #000000; /* Cor do texto do botão */
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  
+  

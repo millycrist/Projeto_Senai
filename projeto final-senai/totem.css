@@ -1,0 +1,590 @@
+
+/* Adicionando regras para telas com largura menor que 500 pixels */
+@media only screen and (max-width: 500px) {
+    body::before, .background-image {
+      background-size: contain; /* Garante que a imagem de fundo seja totalmente visível */
+    }
+  }
+/* Estilos Gerais para o Corpo da Página */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    position: relative; /* Removido overflow: hidden; */
+  }
+  
+  
+  /* Fundo da Página usando ::before */
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/fundo.jpg');
+    background-size: cover;
+    z-index: -1;
+  }
+  
+  /* Classe para o Fundo da Página */
+  .background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/fundo.jpg');
+    background-size: cover;
+    z-index: -1;
+  }
+  
+  /* Estilos para Conteúdo Geral */
+  .content {
+    margin-top: 70px;
+    text-align: center;
+    color: #ffbe0b;
+    align-items: center;
+  }
+  
+  /* Estilos para Títulos */
+  h1 {
+    font-size: 36px;
+    font-weight: bold;
+    align-items: center;
+  }
+  
+  /* Estilos para o Formulário de Pagamento */
+  #payment-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 70px;
+    border-radius: 30px;
+  }
+  
+  #payment-methods {
+    margin-top: 20px;
+  }
+  
+  /* Estilos para o Carrinho de Compras */
+  #cart {
+    border: 2px solid #000000;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  #card-details {
+    margin-top: 10px;
+  }
+  
+  /* Estilos para Botões */
+  button {
+    background-color: #ffbe0b;
+    color: #000000;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ffbe0b;
+  }
+  
+  /* Estilos para um Botão Específico */
+  .black-button {
+    display: block;
+    margin-top: 450px;
+    background-color: #e2a64c;
+    color: rgb(0, 0, 0);
+    padding: 15px 5px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 10px;
+  }
+  
+  .black-button:hover {
+    background-color: #ffbe0b;
+  }
+  
+  /* Estilos para o Container de Finalização de Compra */
+  #checkout-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Estilos para o Botão de Finalização de Compra */
+  #checkout-btn {
+    display: inline-block;
+    background-color: #ffbe0b;
+    color: #000;
+    padding: 15px 45px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #checkout-btn:hover {
+    background-color: #e2a64c; /* Cor de destaque no hover */
+  }
+  
+  #cart-items {
+    margin-left: 8px;
+  }
+  
+  /* Estilos para o Cabeçalho */
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #e2a64c;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+  
+  /* Estilos para o Container do Logo */
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Estilos para a Imagem do Logo */
+  .logo-container img {
+    max-width: 50px; /* Ajuste o tamanho máximo da logo conforme necessário */
+    margin-right: 10px; /* Espaço entre a logo e o nome da empresa */
+  }
+  
+  /* Estilos para o Nome da Empresa */
+  .company-name {
+    font-size: 20px;
+    color: #000000; /* Cor do texto do nome da empresa */
+  }
+  
+  /* Estilos para Links no Cabeçalho */
+  header a {
+    text-decoration: none;
+    color: #000000;
+    margin: 0 10px;
+    font-size: 20px;
+  }
+  
+  /* Estilos para o Título Principal no Cabeçalho */
+  header h1 {
+    margin: 0;
+  }
+  
+  /* Estilos para o ícone de carrinho */
+  .cart-icon-container {
+    position: relative;
+    margin-left: 20px; /* Ajuste conforme necessário para o posicionamento desejado */
+  }
+  
+  .cart-icon-container a {
+    text-decoration: none;
+    color: #000; /* Cor do ícone de carrinho */
+  }
+  
+  #cart-items {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red; /* Cor do fundo do número de itens no carrinho */
+    color: #fff; /* Cor do texto do número de itens no carrinho */
+    border-radius: 50%;
+    padding: 5px;
+  }
+  
+  /* Estilos para a Seção Principal */
+  main {
+    padding: 80px 20px 20px; /* 80px para compensar a altura do cabeçalho fixo */
+  }
+  
+  /* Estilos para a Seção da Empresa */
+  .company-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 150px 0;
+  }
+  
+  /* Estilos para a Imagem da Empresa */
+  .company-section img {
+    max-width: 30%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Estilos para o Container de Texto */
+  .text-container {
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 50px;
+    border-radius: 8px;
+    color: #fff;
+  }
+  
+  /* Estilos para Títulos Secundários */
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para Parágrafos */
+  p {
+    line-height: 2.2;
+  }
+  
+  /* Estilo básico para o Carrossel */
+  .swiper-container {
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo preto transparente */
+    margin-top: 150px; /* Ajuste este valor conforme necessário para abaixar o carrossel */
+  }
+  
+  /* Estilos para os Slides do Carrossel */
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000000; /* Adicione uma cor de fundo para cada slide se desejar */
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adicione uma sombra sutil */
+  }
+  
+  /* Estilos para as Imagens nos Slides do Carrossel */
+  .swiper-slide img {
+    width: 100%;
+    height: auto; /* Isso garante a proporção correta da imagem */
+    max-width: 300px; /* Ajuste conforme necessário */
+    border-radius: 30%; /* Borda arredondada */
+    margin-bottom: 20px; 
+  }
+  
+  /* Estilos para Títulos nos Slides do Carrossel */
+  .swiper-slide h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: rgb(255, 255, 255);
+  }
+  
+  /* Estilos para Parágrafos nos Slides do Carrossel */
+  .swiper-slide p {
+    color: #fff; /* Cor do texto */
+    max-width: 300px; /* Largura máxima do texto */
+  }
+  
+  /* Estilos para Botões de Navegação no Carrossel */
+  button {
+    background-color: #ffbe0b;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  /* Estilos para Botões de Navegação no Carrossel */
+  .swiper-button-next,
+  .swiper-button-prev {
+    font-size: 24px;
+    color: #ffbe0b;
+  }
+  
+  /* Estilos para o QR Code */
+  qr-code {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    text-align: center; /* Centraliza o texto dentro do elemento */
+  }
+  
+  /* Estilos para a Barra de Navegação */
+  nav {
+    display: flex;
+    justify-content: space-between; /* Distribui os elementos igualmente */
+    align-items: center;
+    background-color: #ffbe0b;
+    padding: 10px;
+  }
+  
+  /* Estilos para Links na Barra de Navegação */
+  nav a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 15px;
+  }
+  
+  /* Estilos para Imagens nos Links da Barra de Navegação */
+  nav a img {
+    width: 30px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    border-radius: 50%; /* Bordas arredondadas */
+  }
+  
+  /* Adiciona margem à direita para mover o ícone para o lado direito */
+  nav a.whatsapp {
+    margin-left: auto;
+  }
+  
+  /* Estilos para a Seção do Botão */
+  .section.button {
+    text-align: center;
+    padding: 20px;
+    background-color: #e2a64c;
+  }
+  
+  .botao-voltar {
+    display: inline-block;
+    padding: 8px 8px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #000000;
+    background-color: #ffbe0b;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .botao-voltar:hover {
+    background-color: #e2a64c;
+  }
+  
+  
+  
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  header {
+    background-color: #e2a64c;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+  
+  /* Estilos para o Container do Logo */
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Estilos para a Imagem do Logo */
+  .logo-container img {
+    max-width: 50px; /* Ajuste o tamanho máximo da logo conforme necessário */
+    margin-right: 10px; /* Espaço entre a logo e o nome da empresa */
+  }
+  
+  /* Estilos para o Nome da Empresa */
+  .company-name {
+    font-size: 20px;
+    color: #000000; /* Cor do texto do nome da empresa */
+  }
+  
+  /* Estilos para Links no Cabeçalho */
+  header a {
+    text-decoration: none;
+    color: #000000;
+    margin: 0 10px;
+    font-size: 20px;
+  }
+  
+  /* Estilos para o Título Principal no Cabeçalho */
+  header h1 {
+    margin: 0;
+  }
+  
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-container img {
+    height: 50px;
+    margin-right: 10px;
+  }
+  /* Estilos para o Nome da Empresa */
+.company-name {
+    font-size: 20px;
+    color: #000000; /* Cor do texto do nome da empresa */
+  }
+  
+  nav {
+    display: flex;
+  }
+  
+  nav a {
+    color: #000000;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 5px;
+  }
+  
+  #checkout-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  #checkout-btn {
+    background-color: #e2a64c;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  #cart-items {
+    background-color: #ff9800;
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px 8px;
+    margin-left: 5px;
+  }
+  
+  .cart-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 20px;
+  }
+  
+  #cart {
+    list-style: none;
+    padding: 1;
+   
+  }
+  
+  #cart li {
+    margin-bottom: 5px;
+  }
+  
+  button {
+    background-color:#ff9800;
+    color: #000000;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/fundo.jpg');
+    background-size: cover;
+    z-index: -1;
+  }
+  
+  .content {
+    margin: 20px;
+  }
+  
+  #payment-form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  #payment-form h2 {
+    color: #ffffff;
+  }
+  
+  #payment-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  #payment-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  #payment-methods {
+    margin-bottom: 10px;
+  }
+  
+  #qr-code {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        text-align: center; /* Centraliza o texto dentro do elemento */
+      }
+
+
+  
+      #card-details {
+        margin-top: 10px;
+      }
+  
+  
+  .button {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .botao-voltar {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .botao-voltar:hover {
+    background-color: #000000;
+  }
+
+  header {
+    /* Outros estilos para o cabeçalho */
+    position: relative; /* Certifique-se de que o cabeçalho tenha uma posição relativa */
+  }
+  
+  #checkout-container {
+    position: absolute;
+    top: 50%; /* Ajuste conforme necessário para centralizar verticalmente */
+    right: 20px; /* Ajuste conforme necessário para a posição horizontal */
+    transform: translateY(-50%); /* Centraliza verticalmente com base no topo */
+  }
+  
+  #checkout-btn {
+    text-decoration: none;
+    color: #ff9800; /* Cor do texto do botão */
+    background-color: #000000; /* Cor de fundo do botão */
+    padding: 10px 15px; /* Adapte o preenchimento conforme necessário */
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Efeito de transição suave */
+  }
+  
+  #checkout-btn:hover {
+    background-color: #e2a64c; /* Cor de destaque no hover */
+    color: #fff; /* Muda a cor do texto no hover */
+  }
+  
+  
